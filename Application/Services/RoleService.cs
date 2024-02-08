@@ -5,11 +5,11 @@ using Infrastructure.Repositories;
 
 namespace Application.Services
 {
-    public class SortieService :ISortieService
+    public class RoleService :IRoleService
     {
-        public SortieRepository _rsortieRepository { get; set; }
+        public RoleRepository _rroleRepository { get; set; }
 
-        public SortieService(SortieRepository rsortieRepository)
+        public RoleService(RoleRepository rsortieRepository)
         {
             _rsortieRepository = rsortieRepository;
         }

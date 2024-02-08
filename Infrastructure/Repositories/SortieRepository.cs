@@ -3,7 +3,7 @@ using Infrastructure.Contexts;
 
 namespace Infrastructure.Repositories
 {
-    public class SortieRepository
+    public class SortieRepository : ISortieRepository
     {
         public readonly SortieContext _context;
         public SortieRepository(SortieContext context)

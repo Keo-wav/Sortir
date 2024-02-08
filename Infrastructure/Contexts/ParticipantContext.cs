@@ -3,8 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Contexts
 {
-    public class EtatContext : DbContext
+    public class ParticipantContext : DbContext
     {
-        public DbSet<Etat> Etat { get; set; }
+        public DbSet<Participant> Participant { get; set; }
     }
 }

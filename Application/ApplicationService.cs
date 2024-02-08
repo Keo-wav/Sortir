@@ -1,4 +1,7 @@
 ﻿using Application.Services;
+using Infrastructure.Contexts;
+using Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace SortieApp.Application
@@ -7,8 +10,9 @@ namespace SortieApp.Application
     {
         public static IServiceCollection ConfigureApplicationService(this IServiceCollection services)
         {
-            services.AddSingleton<SortieService>();
+            services.AddScoped<ISortieService, SortieService>();
             return services;
         }
+
     }
 }

@@ -7,8 +7,8 @@ namespace SortieWebApp.Controllers
     [Route("api/[controller]")]
     public class SortieController : ControllerBase
     {
-        public SortieService _sortieService { get; set; }   
-        public SortieController(SortieService sortieService) {
+        public ISortieService _sortieService { get; set; }   
+        public SortieController(ISortieService sortieService) {
             _sortieService = sortieService;
         }
         [HttpPost]
