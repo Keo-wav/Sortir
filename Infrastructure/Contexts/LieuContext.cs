@@ -7,9 +7,9 @@ namespace Infrastructure.Contexts
     {
         public DbSet<Lieu> Lieu { get; set; }
 
-        public static implicit operator LieuContext(SortieContext v)
+        public LieuContext(DbContextOptions<LieuContext> options) : base(options)
         {
-            throw new NotImplementedException();
+
         }
     }
 }

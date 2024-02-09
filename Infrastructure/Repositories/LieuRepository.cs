@@ -6,7 +6,7 @@ namespace Infrastructure.Repositories
     public class LieuRepository : ILieuRepository
     {
         public readonly LieuContext _context;
-        public LieuRepository(SortieContext context)
+        public LieuRepository(LieuContext context)
         { _context = context; }
 
         public void AddLieu(Lieu lieu)

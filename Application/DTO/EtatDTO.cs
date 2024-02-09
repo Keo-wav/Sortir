@@ -1,7 +1,6 @@
-﻿
-namespace Domain.Entities
+﻿namespace Domain.Entities
 {
-    public class Role
+    public class EtatDTO 
     {
         public int Id { get; set; }
         public string Libelle { get; set; }

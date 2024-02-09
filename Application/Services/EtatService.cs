@@ -13,7 +13,7 @@ namespace Application.Services
         {
             _retatRepository = retatRepository;
         }
-        public void AddEtat(Etat etat)
+        public void AddEtat(EtatDTO etat)
         {
             _retatRepository.AddEtat(etat);
         }

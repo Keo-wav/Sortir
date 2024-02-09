@@ -1,18 +1,18 @@
 ﻿using Application.Services;
-using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Application.dt
 
 namespace SortieWebApp.Controllers
 {
     [Route("api/[controller]")]
     public class SortieController : ControllerBase
     {
-        public ISortieService _sortieService { get; set; }   
-        public SortieController(ISortieService sortieService) {
+        public SortieService _sortieService { get; set; }   
+        public SortieController(SortieService sortieService) {
             _sortieService = sortieService;
         }
         [HttpPost]
-        public async Task<ActionResult> AddSortie(Sortie sortie)
+        public async Task<ActionResult> AddSortie(SortieDTO sortie)
         {
             try {
                 _sortieService.AddSortie(sortie);

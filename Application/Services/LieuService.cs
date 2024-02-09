@@ -13,7 +13,7 @@ namespace Application.Services
         {
             _rlieuRepository = rlieuRepository;
         }
-        public void AddLieu(Lieu lieu)
+        public void AddLieu(LieuDTO lieu)
         {
             _rlieuRepository.AddLieu(lieu);
         }

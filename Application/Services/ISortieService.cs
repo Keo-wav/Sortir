@@ -4,6 +4,6 @@ namespace Application.Services
 {
     public interface ISortieService
     {
-        void AddSortie(Sortie sortie);
+        void AddSortie(SortieDTO sortie);
     }
 }

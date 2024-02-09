@@ -2,8 +2,8 @@
 
 namespace Application.Services
 {
-    public interface ILieuService
+    public interface IRoleService
     {
-        void AddLieu(LieuDTO lieu);
+        void AddRole(RoleDTO role);
     }
 }

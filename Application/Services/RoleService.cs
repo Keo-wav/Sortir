@@ -9,13 +9,13 @@ namespace Application.Services
     {
         public RoleRepository _rroleRepository { get; set; }
 
-        public RoleService(RoleRepository rsortieRepository)
+        public RoleService(RoleRepository rroleRepository)
         {
-            _rsortieRepository = rsortieRepository;
+            _rroleRepository = rroleRepository;
         }
-        public void AddSortie(Sortie sortie)
+        public void AddRole(RoleDTO role)
         {
-            _rsortieRepository.AddSortie(sortie);
+            _rroleRepository.AddRole(role);
         }
     }
 }

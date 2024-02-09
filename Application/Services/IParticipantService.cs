@@ -4,6 +4,6 @@ namespace Application.Services
 {
     public interface IParticipantService
     {
-        void AddParticipant(Participant participant);
+        void AddParticipant(ParticipantDTO participant);
     }
 }

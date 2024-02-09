@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Etat 
+    public class LieuDTO
     {
         public int Id { get; set; }
-        public string Libelle { get; set; }
+        public string Etablissement { get; set; }
     }
 }

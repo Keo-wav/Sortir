@@ -4,6 +4,6 @@ namespace Application.Services
 {
     public interface IInscriptionService
     {
-        void AddInscription(Inscription inscription);
+        void AddInscription(InscriptionDTO inscription);
     }
 }

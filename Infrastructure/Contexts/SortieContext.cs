@@ -7,9 +7,9 @@ namespace Infrastructure.Contexts
     {
         public DbSet<Sortie> Sortie { get; set; }
 
-        public static implicit operator SortieContext(InscriptionContext v)
+        public SortieContext(DbContextOptions<SortieContext> options) : base(options)
         {
-            throw new NotImplementedException();
+
         }
     }
 }

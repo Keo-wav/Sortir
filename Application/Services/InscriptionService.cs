@@ -9,13 +9,14 @@ namespace Application.Services
     {
         public InscriptionRepository _rinscriptionRepository { get; set; }
 
-        public InscriptionService(SortieRepository rinscriptionRepository)
+        public InscriptionService(InscriptionRepository rinscriptionRepository)
         {
             _rinscriptionRepository = rinscriptionRepository;
         }
-        public void AddSortie(Sortie sortie)
+        public void AddInscription(InscriptionDTO inscription)
         {
             _rinscriptionRepository.AddInscription(inscription);
         }
+
     }
 }

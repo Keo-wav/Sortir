@@ -4,6 +4,6 @@ namespace Infrastructure.Repositories
 {
     public interface IEtatService
     {
-        void AddEtat(Etat etat);
+        void AddEtat(EtatDTO etat);
     }
 }

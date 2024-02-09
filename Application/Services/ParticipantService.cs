@@ -13,7 +13,7 @@ namespace Application.Services
         {
             _rparticipantRepository = rparticipantRepository;
         }
-        public void AddParticipant(Participant participant)
+        public void AddParticipant(ParticipantDTO participant)
         {
             _rparticipantRepository.AddParticipant(participant);
         }

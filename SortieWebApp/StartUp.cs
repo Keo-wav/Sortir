@@ -41,11 +41,12 @@
 
 using Microsoft.OpenApi.Models;
 using SortieApp.Application;
+using SortieApp.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.ConfigureApplicationService();
+builder.Services.ConfigureApplicationService().ConfigureInfrastructureService();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c =>
 {
